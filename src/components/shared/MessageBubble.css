@@ -1,0 +1,110 @@
+.liya-message {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  max-width: 85%;
+}
+
+.liya-message--user {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.liya-message--assistant {
+  margin-right: auto;
+}
+
+.liya-message__avatar {
+  flex-shrink: 0;
+}
+
+.liya-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liya-avatar--assistant {
+  background: var(--liya-primary-color, #6366f1);
+  color: white;
+}
+
+.liya-avatar--user {
+  background: var(--liya-secondary-color, #e5e7eb);
+  color: var(--liya-text-color, #374151);
+}
+
+.liya-message__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.liya-message__bubble {
+  padding: 12px 16px;
+  border-radius: var(--liya-border-radius, 12px);
+  word-wrap: break-word;
+}
+
+.liya-message--user .liya-message__bubble {
+  background: var(--liya-primary-color, #6366f1);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.liya-message--assistant .liya-message__bubble {
+  background: var(--liya-bg-secondary, #f3f4f6);
+  color: var(--liya-text-color, #374151);
+  border-bottom-left-radius: 4px;
+}
+
+.liya-message__text {
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.liya-message__meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--liya-text-muted, #9ca3af);
+}
+
+.liya-message--user .liya-message__meta {
+  justify-content: flex-end;
+}
+
+.liya-message__suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.liya-suggestion {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-family: inherit;
+  color: var(--liya-primary-color, #6366f1);
+  background: transparent;
+  border: 1px solid var(--liya-primary-color, #6366f1);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.liya-suggestion:hover {
+  background: var(--liya-primary-color, #6366f1);
+  color: white;
+}
+
+.liya-suggestion svg {
+  flex-shrink: 0;
+}
